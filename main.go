@@ -197,9 +197,9 @@ func (m editorModel) View() string {
 func newModel(defaultJson []byte) editorModel {
 	ti := textinput.New()
 	ti.Placeholder = "$.requestedItemsStatus[0].id"
-	ti.SetValue("$.requestedItemsStatus[0].id")
 	ti.Focus()
 	ti.CharLimit = 1000
+	ti.SetValue("$.requestedItemsStatus[0].id")
 	ti.Width = 500
 
 	m := editorModel{
